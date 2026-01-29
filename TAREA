@@ -1,0 +1,171 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/tingadepollo/programacion/blob/main/TAREA\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dia_nac = int(input(\"Día de nacimiento: \"))\n",
+        "mes_nac = int(input(\"Mes de nacimiento: \"))\n",
+        "año_nac = int(input(\"Año de nacimiento: \"))\n",
+        "\n",
+        "dia_act = int(input(\"Día actual: \"))\n",
+        "mes_act = int(input(\"Mes actual: \"))\n",
+        "año_act = int(input(\"Año actual: \"))\n",
+        "\n",
+        "edad = año_act - año_nac\n",
+        "\n",
+        "cumple_este_año = año_act * 10000 + mes_nac * 100 + dia_nac\n",
+        "fecha_actual = año_act * 10000 + mes_act * 100 + dia_act\n",
+        "\n",
+        "no_cumplio = (cumple_este_año - fecha_actual) // 100000000 + 1\n",
+        "edad = edad - no_cumplio\n",
+        "\n",
+        "print(\"Edad\", edad)\n"
+      ],
+      "metadata": {
+        "id": "EhB0zEAvev2L",
+        "collapsed": true
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Cálculo de edad (solo años)\")\n",
+        "\n",
+        "dia_nac = int(input(\"Día de nacimiento: \"))\n",
+        "mes_nac = int(input(\"Mes de nacimiento: \"))\n",
+        "año_nac = int(input(\"Año de nacimiento: \"))\n",
+        "\n",
+        "dia_act = int(input(\"Día actual: \"))\n",
+        "mes_act = int(input(\"Mes actual: \"))\n",
+        "año_act = int(input(\"Año actual: \"))\n",
+        "\n",
+        "edad = año_act - año_nac\n",
+        "\n",
+        "if mes_act < mes_nac:\n",
+        "    edad = edad -1\n",
+        "\n",
+        "if mes_act == mes_nac:\n",
+        "    if dia_act < dia_nac:\n",
+        "        edad = edad -1\n",
+        "\n",
+        "print(\"Tu edad es:\", edad, \"años\")\n"
+      ],
+      "metadata": {
+        "collapsed": true,
+        "id": "YducVsbld2ME"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "calificacion = int(input(\"Ingresa tu calificación: \"))\n",
+        "\n",
+        "if calificacion >= 70:\n",
+        " print(\"Aprobaste felicidades\")\n",
+        "elif calificacion >= 50:\n",
+        " print(\"Reprobaste, pero tienes una segunda oportunidad\")\n",
+        "else:\n",
+        " print(\"Reprobaste, que tonto!\")\n"
+      ],
+      "metadata": {
+        "id": "i0XsJCsCZ1KG",
+        "outputId": "2af0b2af-5a22-430b-83d6-637e4c8d72d4",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingresa tu calificación: 5\n",
+            "Reprobaste, que tonto!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Etapa = int(input(\"Ingresa tu edad: \"))\n",
+        "\n",
+        "if Etapa <= 12:\n",
+        " print(\"Eres un niño o niña\")\n",
+        "elif Etapa <= 17:\n",
+        " print(\"Eres un adolescente\")\n",
+        "elif Etapa <= 65:\n",
+        " print(\"Eres un adulto\")\n",
+        "else:\n",
+        " print(\"Eres un adulto mayor\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "e6CjH-ncdHIK",
+        "outputId": "a4f38392-c74b-4d43-ae95-a41a359792e7",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingresa tu edad: 4\n",
+            "Eres un niño o niña\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Semaforo = input(\"color del semaforo:\")\n",
+        "\n",
+        "if Semaforo == \"rojo\":\n",
+        " print(\"alto\")\n",
+        "elif Semaforo == \"amarillo\":\n",
+        " print(\"precaucion\")\n",
+        "elif Semaforo == \"verde\":\n",
+        " print(\"avanzar\")\n",
+        "\n",
+        "\n",
+        ""
+      ],
+      "metadata": {
+        "id": "5t9M_7E1gTLy"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
